@@ -22,14 +22,12 @@ function Navbar() {
       ${sticky ? 'bg-[#212ea0]' : 'bg-transparent'}
       max-[840px]:py-4`}
     >
-      {/* Logo */}
       <img
         src={logo}
         alt="logo"
         className="w-[20vw] p-1 max-[1000px]:w-[140px]"
       />
 
-      {/* Menu */}
       <ul
         className={`flex items-center transition-all duration-500
         max-[840px]:fixed max-[840px]:top-0 max-[840px]:bottom-0 max-[840px]:bg-[#212ea0]
@@ -42,15 +40,15 @@ function Navbar() {
         </li>
 
         <li className="mx-5 my-1 text-base max-[1000px]:mx-4 max-[840px]:my-6">
-          <Link to="programs" smooth offset={-260} duration={500}>Program</Link>
+          <Link to="#" smooth offset={-260} duration={500}>Program</Link>
         </li>
 
         <li className="mx-5 my-1 text-base max-[1000px]:mx-4 max-[840px]:my-6">
-          <Link to="about" smooth offset={-150} duration={500}>About Us</Link>
+          <Link to="/about" smooth offset={-150} duration={500}>About Us</Link>
         </li>
 
         <li className="mx-5 my-1 text-base max-[1000px]:mx-4 max-[840px]:my-6">
-          <Link to="campus" smooth offset={-260} duration={500}>Campus</Link>
+          <Link to="#" smooth offset={-260} duration={500}>Campus</Link>
         </li>
 
         <li className="mx-5 my-1 text-base max-[1000px]:mx-4 max-[840px]:my-6">
@@ -66,7 +64,6 @@ function Navbar() {
         </li>
       </ul>
 
-      {/* Menu Icon */}
       <img
         src={menu_icon}
         alt="menu"
